@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "415027824619",
+    "project_id": "taller3-efacb",
+    "storage_bucket": "taller3-efacb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415027824619:android:6d51a56d3d990a54947bae",
+        "android_client_info": {
+          "package_name": "com.fandino.taller3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQyd4J6bBQMgNRx7uve41nEhBd1K7YID0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF2FA"
+    android:padding="20dp"
+    tools:context=".SignUp">
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loadedPic"
+        android:layout_marginBottom="-1dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Sign Up"
+        android:textSize="40sp"
+        android:textColor="#7B5BF2"/>
+
+    <ImageView
+        android:id="@+id/loadedPic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@id/nameTxt"
+        android:layout_marginBottom="29dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_border" />
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Name: "
+        android:textSize="20sp"
+        android:layout_above="@+id/lastNameInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#2F2e2e"/>
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="20sp"
+        android:layout_above="@+id/lastNameInput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/nunito"
+        />
+
+    <TextView
+        android:id="@+id/lastNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Last Name: "
+        android:layout_above="@+id/emailInput"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true"
+        android:textColor="#2F2e2e"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/lastNameInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:textSize="20sp"
+        android:layout_above="@id/emailInput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/nunito"/>
+
+    <TextView
+        android:id="@+id/emailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Email: "
+        android:textSize="20sp"
+        android:textColor="#2F2e2e"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/nunito"/>
+
+    <TextView
+        android:id="@+id/passwordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2F2e2e"
+        android:fontFamily="@font/nunito"
+        android:text="Password: "
+        android:textSize="20sp"
+        android:layout_below="@+id/emailInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        />
+
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:layout_below="@id/emailInput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/nunito"/>
+
+    <TextView
+        android:id="@+id/idTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="ID: "
+        android:textColor="#2F2e2e"
+        android:textSize="20sp"
+        android:layout_below="@+id/passwordInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <EditText
+        android:id="@+id/idInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="ID"
+        android:textSize="20sp"
+        android:layout_below="@id/passwordInput"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/nunito"/>
+
+    <TextView
+        android:id="@+id/LatitudeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Latitude: "
+        android:textColor="#2F2e2e"
+        android:textSize="20sp"
+        android:layout_below="@+id/idInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/Latitude"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:textSize="20sp"
+        android:layout_below="@+id/idInput"
+        android:layout_alignParentEnd="true"
+        android:textColor="#2F2e2e"
+        android:layout_marginEnd="30dp"
+        />
+
+    <TextView
+        android:id="@+id/LongitudeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:text="Longitude: "
+        android:textColor="#2F2e2e"
+        android:textSize="20sp"
+        android:layout_below="@+id/LatitudeTxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <TextView
+        android:id="@+id/Longitude"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito"
+        android:textSize="20sp"
+        android:layout_below="@+id/Latitude"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:textColor="#2F2e2e"
+        />
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Longitude"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        android:fontFamily="@font/nunito"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#09184D"/>
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nameTxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="@font/nunito"
+        android:text="Gallery"
+        android:backgroundTint="#09184D"/>
+
+    <Button
+        android:id="@+id/camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nameTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="45dp"
+        android:fontFamily="@font/nunito"
+        android:text="Camera"
+        android:backgroundTint="#09184D"/>
+
+</RelativeLayout>

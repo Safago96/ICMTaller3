@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#EDF2FA">
+
+    <item
+    android:id="@+id/menuAvailableUsers"
+    android:title="Connected Users" />
+
+    <item
+        android:id="@+id/menuToggleStatus"
+        android:title="Connect - Disconnect" />
+
+    <item
+        android:id="@+id/menuLogOut"
+        android:title="Log Out" />
+
+</menu>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:padding="20dp"
+    android:background="#EDF2FA">
+
+    <TextView
+        android:id="@+id/TituloInicioSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailTxt"
+        android:layout_marginBottom="222dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Log In"
+        android:textSize="40sp"
+        android:textColor="#7B5BF2"/>
+
+    <TextView
+        android:id="@+id/emailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailInput"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/nunito"
+        android:text="Email:"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/nunito"/>
+
+    <TextView
+        android:id="@+id/passwordTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailInput"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/nunito"
+        android:text="Password:"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_below="@+id/passwordTxt"
+        android:fontFamily="@font/nunito"
+        android:textSize="25sp"
+        android:inputType="textPassword"
+        android:ems="10"/>
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordInput"
+        android:layout_centerHorizontal="true"
+        android:text="Log In"
+        android:fontFamily=""
+        android:backgroundTint="#09184D"/>
+
+    <TextView
+        android:id="@+id/signupRedirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:fontFamily="@font/nunito"
+        android:textSize="15sp"
+        android:layout_below="@id/LoginBtn"
+        android:layout_centerHorizontal="true"
+        android:textColor="#09184D"/>
+
+</RelativeLayout>
